@@ -1,0 +1,120 @@
+# Creating a single-page HTML structure based on the user's full school website request
+
+html_content = """
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AL-GHAZALI MODEL SECONDARY SCHOOL/COLLEGE</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        header {
+            background-color: #1d3557;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        nav {
+            background-color: #457b9d;
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+        section {
+            padding: 40px 20px;
+            background-color: white;
+            margin: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h2 {
+            color: #1d3557;
+        }
+        footer {
+            background-color: #1d3557;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>AL-GHAZALI MODEL SECONDARY SCHOOL/COLLEGE</h1>
+    <p>Lilla Town, Jhelum (For Boys & Girls)</p>
+</header>
+
+<nav>
+    <a href="#about">About</a>
+    <a href="#admission">Admission</a>
+    <a href="#departments">Departments</a>
+    <a href="#faculty">Faculty</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<section id="about">
+    <h2>About Us</h2>
+    <p><strong>History:</strong> AL-Ghazali has a strong history of academic excellence and character building.</p>
+    <p><strong>Mission & Vision:</strong> To empower students through knowledge and discipline in a supportive environment.</p>
+    <p><strong>Achievements:</strong> Board distinctions, community awards, and more.</p>
+</section>
+
+<section id="admission">
+    <h2>Admissions</h2>
+    <p><strong>Admission Criteria:</strong> Open to all students based on merit and availability.</p>
+    <p><strong>Classes Offered:</strong> Nursery to 10th, 1st Year, 2nd Year</p>
+</section>
+
+<section id="departments">
+    <h2>Departments</h2>
+    <ul>
+        <li>Science</li>
+        <li>Computer Science</li>
+        <li>Arts</li>
+        <li>Islamic Studies</li>
+        <li>Matric & Inter Level</li>
+    </ul>
+</section>
+
+<section id="faculty">
+    <h2>Faculty & Staff</h2>
+    <p><strong>Principal:</strong> Experienced academic leader with passion for education.</p>
+    <p><strong>Teachers:</strong> Highly qualified staff for all subjects.</p>
+    <p><strong>Admin Team:</strong> Efficient and supportive administrative staff.</p>
+</section>
+
+<section id="contact">
+    <h2>Contact Us</h2>
+    <p><strong>Address:</strong> Lilla Town, Jhelum</p>
+    <p><strong>Phone:</strong> 0300 6025340</p>
+</section>
+
+<footer>
+    <p>Follow us on Facebook | &copy; 2025 Created By SHOUMAIL ARSHAD</p>
+</footer>
+
+</body>
+</html>
+"""
+
+# Save to file
+file_path = "/mnt/data/alghazali_school_onepage.html"
+with open(file_path, "w", encoding="utf-8") as file:
+    file.write(html_content)
+
+file_path
